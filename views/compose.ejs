@@ -1,0 +1,24 @@
+<!-- Include the "header" partial -->
+<%- include("partials/header"); -%>
+
+<!-- Heading for the Compose page -->
+<h1>Compose</h1>
+
+<!-- Form to create a new blog post -->
+<form class="" action="/compose" method="post">
+  <div class="form-group">
+    <!-- Input field for the blog post title -->
+    <label>Title</label>
+    <input class="form-control" type="text" name="postTitle">
+
+    <!-- Textarea for the blog post content -->
+    <label>Post</label>
+    <textarea class="form-control" name="postBody" rows="5" cols="30"></textarea>
+  </div>
+
+  <!-- Button to submit the blog post -->
+  <button class="btn btn-primary" type="submit" name="button">Publish</button>
+</form>
+
+<!-- Include the "footer" partial -->
+<%- include("partials/footer"); -%>
